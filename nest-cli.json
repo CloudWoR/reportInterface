@@ -1,0 +1,27 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "libs": {
+      "type": "library",
+      "root": "libs/libs",
+      "entryFile": "index",
+      "sourceRoot": "libs/libs/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/libs/tsconfig.lib.json"
+      }
+    },
+    "pacsdb": {
+      "type": "library",
+      "root": "libs/pacsdb",
+      "entryFile": "index",
+      "sourceRoot": "libs/pacsdb/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/pacsdb/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

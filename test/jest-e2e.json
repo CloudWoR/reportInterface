@@ -1,0 +1,19 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@libs/libs/(.*)": "<rootDir>/../libs/libs/src/$1",
+    "@libs/libs": "<rootDir>/../libs/libs/src",
+    "@libs/pacsdb/(.*)": "<rootDir>/../libs/pacsdb/src/$1",
+    "@libs/pacsdb": "<rootDir>/../libs/pacsdb/src"
+  }
+}
