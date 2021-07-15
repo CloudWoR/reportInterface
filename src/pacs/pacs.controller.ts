@@ -17,10 +17,10 @@ import { ApiTags } from '@nestjs/swagger';
 export class PacsController {
   constructor(private readonly pacsService: PacsService) {}
 
-  @Get('initail')
-  initail() {
-    return this.pacsService.initailLocalPacsdb();
-  }
+  // @Get('initail')
+  // initail() {
+  //   return this.pacsService.initailLocalPacsdb();
+  // }
 
   @Post()
   create(@Body() createPacDto: CreatePacDto) {

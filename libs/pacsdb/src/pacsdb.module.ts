@@ -4,7 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { tReportInfoKiosk } from './entity/tReportInfoKiosk.entity';
 
 const model = TypeOrmModule.forFeature([tReportInfoKiosk]);
-@Global()
+// @Global()
 @Module({
   imports: [
     TypeOrmModule.forRoot({

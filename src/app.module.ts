@@ -9,7 +9,7 @@ import { AppService } from './app.service';
 import { PacsModule } from './pacs/pacs.module';
 
 @Module({
-  imports: [PacsModule, LocaldbModule, PacsdbModule],
+  imports: [PacsModule, LocaldbModule],
   controllers: [AppController],
   providers: [AppService],
 })

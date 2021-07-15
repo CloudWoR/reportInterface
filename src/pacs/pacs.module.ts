@@ -6,10 +6,7 @@ import { T_S_PACS } from '@libs/libs/entity/T_S_PACS.entity';
 import { tReportInfoKiosk } from 'libs/pacsdb/src/entity/tReportInfoKiosk.entity';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([T_S_PACS], 'localdb'),
-    TypeOrmModule.forFeature([tReportInfoKiosk]),
-  ],
+  imports: [TypeOrmModule.forFeature([T_S_PACS], 'localdb')],
   controllers: [PacsController],
   providers: [PacsService],
 })
